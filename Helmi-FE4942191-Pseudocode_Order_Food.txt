@@ -1,0 +1,25 @@
+PROGRAM Show Food
+READ "Food" STORE "Food" with
+1.  Id_Food     : 1
+    Name        : "Burger with cheese"
+    Price       : 12.000
+2.  Id_Food     : 2
+    Name        : "Fried Chicken with rice"
+    Price       : 10.000
+3.  Id_Food     : 3
+    Name        : "Kebab"
+    Price       : Rp 15.000
+3.  Id_Food     : 4
+    Name        : "Pepsi"
+    Price       : Rp 7.000
+Print "FOOD"
+
+PROGRAM Food Cart & Payment
+READ "CART" STORE "CART" with "Id_Food"
+READ "Status" STORE "Done" with "Yes"
+
+IF "Status" is "Yes"
+    Do Payment FROM "CART"
+ELSE
+    DO PROGRAM Show Food
+
